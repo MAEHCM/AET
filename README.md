@@ -18,7 +18,7 @@ We introduce an extra visual transformer as the alignment-ware image encoder and
 # Train
 
 ```
-git clone 
+git clone https://github.com/MAEHCM/AET.git && cd AET
 ```
 
 ### Finetune on FUNSD / CORD
