@@ -12,7 +12,10 @@ We introduce an extra visual transformer as the alignment-ware image encoder and
 |:--------:| :-------------:|:-------------:|
 | FUNSD | 91.55 | [download]() |
 | CORD | 97.04 |[download]() |
-| RVL-CDIP |  |[download]() |
+
+| Model | Acc      | Link      |
+|:--------:| :-------------:|:-------------:|
+| RVL-CDIP | 96.30 |[download]() |
 
 
 # Train
@@ -21,16 +24,19 @@ We introduce an extra visual transformer as the alignment-ware image encoder and
 git clone https://github.com/MAEHCM/AET.git && cd AET
 ```
 
-### Finetune on FUNSD / CORD
+### Finetune LayoutLMv3 model
+
+First set up the required dataset under the appropriate path ，Select the corresponding model in { }，`funsd`,`cord` or `cdip`
 
 ```
-
+cd preprocess
+python preprocess_{}.py
 ```
 
-### Finetune on RVL-CDIP
+Then execute the corresponding finetune file to fine tune the model ，Select the corresponding model in { }，`funsd`,`cord` or `cdip`
 
 ```
-
+python -m torch.distributed.launch --nproc_per_node=2 --use_env python finetune_{}.py --config Pretrain.yaml --output_dir
 ```
 
 
