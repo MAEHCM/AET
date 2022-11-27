@@ -44,7 +44,7 @@ python -m torch.distributed.launch --nproc_per_node=2 --use_env python finetune_
 
 We referenced the code of ALBEF and TCL when implementing AET in github, In this repository, we used three public benchmark datasets, FUNSD , CORD , RVL-CDIP.
 
-# License
+# Citation
 
 ```
 TBD
