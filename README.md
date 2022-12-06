@@ -47,7 +47,12 @@ We referenced the code of ALBEF and TCL when implementing AET in github, In this
 # How to Cite
 If you find this repo is useful, please consider to cite our paper:
 ```
-TBD
+@article{wang2022alignment,
+  title={Alignment-Enriched Tuning for Patch-Level Pre-trained Document Image Models},
+  author={Wang, Lei and He, Jiabang and Xu, Xing and Liu, Ning and Liu, Hui},
+  journal={arXiv preprint arXiv:2211.14777},
+  year={2022}
+}
 
 ```
 
